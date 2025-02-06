@@ -12,3 +12,4 @@ spec:
   parents: none
   children: [backstage, me, other]
   members: [users]
+  owner: furini
