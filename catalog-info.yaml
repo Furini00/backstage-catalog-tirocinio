@@ -7,5 +7,5 @@ metadata:
     github.com/project-slug: Furini00/backstage-catalog-tirocinio
 spec:
   type: service
-  owner: team-backend
+  owner: furini
   lifecycle: production
