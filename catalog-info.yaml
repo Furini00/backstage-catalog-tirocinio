@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mio-servizio
+  description: Un servizio registrato nel catalogo di Backstage
+  annotations:
+    github.com/project-slug: Furini00/backstage-catalog-tirocinio
+spec:
+  type: service
+  owner: team-backend
+  lifecycle: production
