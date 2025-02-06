@@ -9,6 +9,6 @@ spec:
     displayName: Tirocinio
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
-  parents: none
-  children: [backstage, me, other]
+  parents: test
+  children: [backstage, other]
   members: [users]
