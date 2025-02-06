@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Gruop
+metadata:
+  name: furini
+  description: group unit
+spec:
+  type: team
+  profile:
+    displayName: Tirocinio
+    email: tirocinio@example.com
+    picture: https://example.com/groups/tirocinio.jpeg
+  parents: none
+  children: [backstage, other]
+  members: [users]
