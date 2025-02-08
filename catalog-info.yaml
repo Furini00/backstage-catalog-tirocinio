@@ -4,6 +4,7 @@ metadata:
   name: mio-servizio
   description: Un servizio registrato nel catalogo di Backstage
   annotations:
+    backstage.io/techdocs-ref: value
     github.com/project-slug: Furini00/backstage-catalog-tirocinio
 spec:
   type: service
