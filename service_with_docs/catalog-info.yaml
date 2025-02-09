@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Tirocinio Furini
+  name: Tirocinio-Furini
   description: Tirocinio Furini
   annotations:
     backstage.io/techdocs-ref: dir:.
