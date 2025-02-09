@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: furini
+  name: Tirocinio
   description: group unit
 spec:
   type: team
   profile:
-    displayName: Tirocinio
+    displayName: furini
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
   parents: test
