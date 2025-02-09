@@ -6,6 +6,6 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: content-team
+  owner: furini
   definition:
     $text: 'https://newsapi.org/docs'
