@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: furini
   definition:
-    $text: 'https://newsapi.org/docs'
+    $text: 'https://newsapi.org/v2/everything?q=tesla&from=2025-01-09&sortBy=publishedAt&apiKey=API_KEY'
