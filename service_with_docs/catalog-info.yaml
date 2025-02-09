@@ -6,6 +6,16 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: 'Furini00/backstage-catalog-tirocinio'
+  links:
+    - url: https://github.com/Furini00/backstage-catalog-tirocinio
+      title: Repository GitHub
+      icon: github
+    - url: https://backstage.io/docs
+      title: Backstage Docs
+      icon: book
+    - url: https://dashboard.example.com
+      title: Service Dashboard
+      icon: dashboard
 spec:
   type: service
   lifecycle: production
