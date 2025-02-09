@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: Tirocinio
+  name: furini
   description: group unit
 spec:
   type: team
