@@ -2,6 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: service-with-docs
+    links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
   description: The place to be, for great artists
   annotations:
     backstage.io/techdocs-ref: dir:.
