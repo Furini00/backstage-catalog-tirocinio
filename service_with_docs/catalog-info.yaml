@@ -1,21 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: service-with-docs
-  description: The place to be, for great artists
+  name: Tirocinio Furini
+  description: Tirocinio Furini
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: 'Furini00/backstage-catalog-tirocinio'
   links:
     - url: https://github.com/Furini00/backstage-catalog-tirocinio
-      title: Repository GitHub
+      title: Repository GitHub del Tirocinio
       icon: github
-    - url: https://backstage.io/docs
-      title: Backstage Docs
-      icon: book
-    - url: https://dashboard.example.com
-      title: Service Dashboard
-      icon: dashboard
 spec:
   type: service
   lifecycle: production
