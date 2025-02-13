@@ -10,5 +10,3 @@ spec:
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
   parents: test
-  children: [backstage, other]
-  members: [users]
