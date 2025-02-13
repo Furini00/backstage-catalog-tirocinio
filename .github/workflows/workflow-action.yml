@@ -1,11 +1,10 @@
 name: CI
 
-# Controls when the workflow will run
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -13,29 +12,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del repository
+      # Step 1: Checkout del repository
       - uses: actions/checkout@v4
 
-      # Setup Node.js e TypeScript
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'  # Usa la versione di Node.js che ti serve
 
+      # Step 3: Installa le dipendenze
       - name: Install dependencies
         run: |
-          npm install -g typescript
-          npm install
+          cd service-with-docs  # Naviga nella cartella che contiene il catalog-info.yaml
+          npm install  # Installa le dipendenze
+          npm install -g typescript  # Installa TypeScript se necessario
 
-      # Compilazione del file TypeScript
-      - name: Compile TypeScript
-        run: tsc helloWorld.ts
-
-      # Esecuzione del file compilato (JavaScript)
-      - name: Run compiled JavaScript
-        run: node helloWorld.js
-
-      # Messaggio di successo o errore
-      - name: Display a message
+      # Step 4: Costruisci la documentazione TechDocs (se necessario)
+      - name: Build TechDocs
         run: |
-          echo "CI workflow completed!"
+          cd service-with-docs
+          backstage-cli techdocs:build
+
+      # Step 5: Esegui il tuo codice TypeScript (se è parte del test)
+      - name: Compile TypeScript
+        run: |
+          tsc helloWorld.ts  # Compilazione del file TypeScript
+          node helloWorld.js  # Esegui il file compilato
+
+      # Step 6: Messaggio di completamento
+      - name: Display a message
+        run: echo "CI workflow completed!"
