@@ -3,8 +3,12 @@ name: CI
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'service_with_docs/src/**'  # Esegui il workflow solo se i file in src vengono modificati
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'service_with_docs/src/**'  # Esegui il workflow solo se i file in src vengono modificati
   workflow_dispatch:
 
 jobs:
