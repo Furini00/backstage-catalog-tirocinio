@@ -14,31 +14,33 @@ jobs:
     steps:
       # Step 1: Checkout del repository
       - uses: actions/checkout@v4
-
-      # Step 2: Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Usa la versione di Node.js che ti serve
+          fetch-depth: 0  # Assicurati di fare il checkout completo del repository
 
-      # Step 3: Installa le dipendenze
-      - name: Install dependencies
+      # Step 2: Verifica la struttura delle cartelle
+      - name: List files in the repository
         run: |
-          cd service-with-docs  # Naviga nella cartella che contiene il catalog-info.yaml
-          npm install  # Installa le dipendenze
-          npm install -g typescript  # Installa TypeScript se necessario
+          echo "Listing files in the repository"
+          ls -R  # Elenco ricorsivo dei file per vedere la struttura delle cartelle
 
-      # Step 4: Costruisci la documentazione TechDocs (se necessario)
+      # Step 3: Installazione dipendenze e TypeScript
+      - name: Install dependencies and TypeScript
+        run: |
+          cd service-with-docs || exit 1  # Se la cartella non esiste, esci con errore
+          npm install
+          npm install -g typescript
+
+      # Step 4: Costruzione della documentazione TechDocs
       - name: Build TechDocs
         run: |
           cd service-with-docs
           backstage-cli techdocs:build
 
-      # Step 5: Esegui il tuo codice TypeScript (se è parte del test)
+      # Step 5: Compilazione TypeScript
       - name: Compile TypeScript
         run: |
-          tsc helloWorld.ts  # Compilazione del file TypeScript
-          node helloWorld.js  # Esegui il file compilato
+          tsc helloWorld.ts
+          node helloWorld.js
 
       # Step 6: Messaggio di completamento
       - name: Display a message
