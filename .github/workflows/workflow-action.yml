@@ -26,14 +26,14 @@ jobs:
       # Step 3: Installazione dipendenze e TypeScript
       - name: Install dependencies and TypeScript
         run: |
-          cd service-with-docs || exit 1  # Se la cartella non esiste, esci con errore
+          cd service_with_docs || exit 1  # Usa il nome corretto della cartella
           npm install
           npm install -g typescript
 
       # Step 4: Costruzione della documentazione TechDocs
       - name: Build TechDocs
         run: |
-          cd service-with-docs
+          cd service_with_docs  # Usa il nome corretto della cartella
           backstage-cli techdocs:build
 
       # Step 5: Compilazione TypeScript
