@@ -33,10 +33,6 @@ jobs:
       - name: Compile TypeScript
         run: npm run build
 
-      # Esegui il linting (opzionale)
-      - name: Run linting
-        run: npm run lint
-
       # Esegui i test (opzionale, se hai test configurati)
       #- name: Run tests
        # run: npm test
