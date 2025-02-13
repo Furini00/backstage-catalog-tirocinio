@@ -23,24 +23,17 @@ jobs:
           echo "Listing files in the repository"
           ls -R  # Elenco ricorsivo dei file per vedere la struttura delle cartelle
 
-      # Step 3: Installazione dipendenze e TypeScript
+      # Step 3: Installazione dipendenze e TypeScript (dalla cartella principale)
       - name: Install dependencies and TypeScript
         run: |
-          cd service_with_docs || exit 1  # Usa il nome corretto della cartella
-          npm install
-          npm install -g typescript
+          npm install  # Installare le dipendenze dalla root della repository
+          npm install -g typescript  # Installare globalmente TypeScript
 
       # Step 4: Costruzione della documentazione TechDocs
       - name: Build TechDocs
         run: |
           cd service_with_docs  # Usa il nome corretto della cartella
           backstage-cli techdocs:build
-
-      # Step 5: Compilazione TypeScript
-      - name: Compile TypeScript
-        run: |
-          tsc helloWorld.ts
-          node helloWorld.js
 
       # Step 6: Messaggio di completamento
       - name: Display a message
