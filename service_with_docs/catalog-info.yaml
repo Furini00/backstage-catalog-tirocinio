@@ -14,3 +14,15 @@ spec:
   type: service
   lifecycle: production
   owner: furini
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: hello-ts
+  description: File TypeScript di test
+  annotations:
+    github.com/project-slug: 'Furini00/backstage-catalog-tirocinio/blob/main/hello.ts'
+spec:
+  type: file
+  owner: furini
