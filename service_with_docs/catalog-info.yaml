@@ -4,7 +4,7 @@ metadata:
   name: Tirocinio-Furini
   description: Tirocinio Furini
   annotations:
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:docs  # Punto di riferimento per la documentazione (Markdown)
     github.com/project-slug: 'Furini00/backstage-catalog-tirocinio'
   links:
     - url: https://github.com/Furini00/backstage-catalog-tirocinio
@@ -22,7 +22,7 @@ metadata:
   name: hello-ts
   description: File TypeScript di test
   annotations:
-    github.com/project-slug: 'https://github.com/Furini00/backstage-catalog-tirocinio/blob/main/hello.ts'
+    github.com/project-slug: 'https://github.com/Furini00/backstage-catalog-tirocinio/blob/main/service_with_docs/src/hello.ts'
 spec:
   type: file
   owner: furini
