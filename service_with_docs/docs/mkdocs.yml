@@ -1,4 +1,3 @@
-site_name: Backstage Service Docs
-
 nav:
-  - Home: hello.md
+  - Home: index.md
+  - Documentazione del Servizio Hello: hello.md
