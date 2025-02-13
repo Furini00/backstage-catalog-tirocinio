@@ -33,6 +33,6 @@ jobs:
       - name: Compile TypeScript
         run: npm run build
 
-      # Esegui i test (opzionale, se hai test configurati)
-      #- name: Run tests
-       # run: npm test
+      # Esegui i test
+      - name: Run tests
+        run: npm test
