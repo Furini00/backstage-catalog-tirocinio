@@ -22,7 +22,7 @@ metadata:
   name: hello-ts
   description: File TypeScript di test
   annotations:
-    github.com/project-slug: 'Furini00/backstage-catalog-tirocinio/blob/main/hello.ts'
+    github.com/project-slug: 'https://github.com/Furini00/backstage-catalog-tirocinio/blob/main/hello.ts'
 spec:
   type: file
   owner: furini
