@@ -27,4 +27,4 @@ spec:
     email: sviluppo@example.com
   parents: sviluppo
   children: []
-  members: []
+  members: [furini]
