@@ -2,41 +2,42 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
-    paths:
-      - 'service_with_docs/src/**'  # Esegui il workflow solo se i file in src vengono modificati
+    branches: [ "main" ] 
   pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'service_with_docs/src/**'  # Esegui il workflow solo se i file in src vengono modificati
-  workflow_dispatch:
+    branches: [ "main" ] 
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del codice
       - uses: actions/checkout@v4
 
-      # Configura Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      # Installa le dipendenze
       - name: Install dependencies
         run: npm install
 
-      # Verifica che TypeScript sia installato
+      - name: Check for changes in src
+        id: check_src
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^service_with_docs/src/'; then
+            echo "changes=true" >> $GITHUB_ENV
+          else
+            echo "changes=false" >> $GITHUB_ENV
+          fi
+
       - name: Check TypeScript installation
+        if: env.changes == 'true'
         run: npx tsc --version
 
-      # Compila i file TypeScript
       - name: Compile TypeScript
+        if: env.changes == 'true'
         run: npm run build
 
-      # Esegui i test
       - name: Run tests
         run: npm test
