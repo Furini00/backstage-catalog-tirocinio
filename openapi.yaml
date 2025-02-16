@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: tirocinio-service-api
-  description: API per il servizio sviluppato durante il tirocinio
+  name: api-tirocinio
+  description: API sviluppato durante il tirocinio
   tags:
     - tirocinio
     - backend
