@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: Tirocinio
+  name: tirocinio
   description: Gruppo del tirocinio
 spec:
   type: team
