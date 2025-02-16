@@ -12,33 +12,3 @@ spec:
   parents: sviluppo
   children: [backstage, gruppo-sviluppo]
   members: [furini, professore]
-
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: backstage
-  description: Gruppo dedicato allo sviluppo di Backstage
-spec:
-  type: team
-  profile:
-    displayName: Backstage Team
-    email: backstage@example.com
-  parents: sviluppo
-  children: []
-  members: []
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: gruppo-sviluppo
-  description: Gruppo generale di sviluppo
-spec:
-  type: team
-  profile:
-    displayName: Gruppo di sviluppo
-    email: sviluppo@example.com
-  parents: sviluppo
-  children: []
-  members: []
-
-
