@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: furini
+  description: Studente tirocinante
+spec:
+  profile:
+    displayName: Furini
+    email: furini@example.com
+  memberOf: [tirocinio]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: professore
+  description: Professore supervisore
+spec:
+  profile:
+    displayName: Professore
+    email: professore@example.com
+  memberOf: [tirocinio]
+
