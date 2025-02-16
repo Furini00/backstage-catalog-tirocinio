@@ -1,14 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: furini
-  description: group unit
+  name: tirocinio
+  description: Gruppo del tirocinio
 spec:
   type: team
   profile:
-    displayName: furini
+    displayName: tirocinio
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
-  parents: test
-  children: [backstage, other]
-  members: [users]
+  parents: sviluppo
+  children: [backstage, gruppo-sviluppo]
+  members: [furini, professore]
