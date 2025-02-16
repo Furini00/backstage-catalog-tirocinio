@@ -7,6 +7,10 @@ metadata:
     - tirocinio
     - backend
     - rest
+  links:
+    - url: https://github.com/Furini00/backstage-catalog-tirocinio
+      title: Repository GitHub del Tirocinio
+      icon: github
 spec:
   type: openapi
   lifecycle: production
