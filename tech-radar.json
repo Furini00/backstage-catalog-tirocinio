@@ -1,0 +1,21 @@
+{
+  "rings": [
+    { "id": "adopt", "name": "ADOPT", "color": "#5BA300", "description": "Tecnologie da adottare" },
+    { "id": "trial", "name": "TRIAL", "color": "#009EB0", "description": "Tecnologie in prova" }
+  ],
+  "quadrants": [
+    { "id": "languages", "name": "Languages" },
+    { "id": "frameworks", "name": "Frameworks" }
+  ],
+  "entries": [
+    {
+      "key": "typescript",
+      "id": "typescript",
+      "title": "TypeScript",
+      "quadrant": "languages",
+      "timeline": [
+        { "ringId": "adopt", "date": "2024-06-01", "description": "Abbiamo adottato TypeScript!" }
+      ]
+    }
+  ]
+}
