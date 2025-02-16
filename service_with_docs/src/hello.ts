@@ -3,4 +3,4 @@ export function sayHello(name: string): string {
 }
 
 const greeting = sayHello("Mario");
-console.log(greeting);
+console.log(greeting); 
