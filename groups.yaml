@@ -3,6 +3,10 @@ kind: Group
 metadata:
   name: tirocinio
   description: Gruppo del tirocinio
+  links:
+    - url: https://github.com/Furini00/backstage-catalog-tirocinio
+      title: Repository GitHub del Tirocinio
+      icon: github
 spec:
   type: team
   profile:
@@ -20,6 +24,10 @@ kind: Group
 metadata:
   name: sviluppo
   description: Gruppo generale di sviluppo
+  links:
+    - url: https://github.com/Furini00/backstage-catalog-tirocinio
+      title: Repository GitHub del Tirocinio
+      icon: github
 spec:
   type: team
   profile:
