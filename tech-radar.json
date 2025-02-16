@@ -9,12 +9,30 @@
   ],
   "entries": [
     {
+      "key": "javascript",
+      "id": "javascript",
+      "title": "JavaScript",
+      "quadrant": "languages",
+      "timeline": [
+        { "ringId": "adopt", "date": "2024-09-01", "description": "Abbiamo adottato JavaScript!" }
+      ]
+    },
+    {
       "key": "typescript",
       "id": "typescript",
       "title": "TypeScript",
       "quadrant": "languages",
       "timeline": [
-        { "ringId": "adopt", "date": "2024-06-01", "description": "Abbiamo adottato TypeScript!" }
+        { "ringId": "adopt", "date": "2024-06-12", "description": "Abbiamo adottato TypeScript!" }
+      ]
+    },
+    {
+      "key": "python",
+      "id": "python",
+      "title": "Python",
+      "quadrant": "languages",
+      "timeline": [
+        { "ringId": "trial", "date": "2025-02-01", "description": "Stiamo valutando Python!" }
       ]
     }
   ]
