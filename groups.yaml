@@ -10,7 +10,7 @@ spec:
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
   parents: sviluppo
-  children: [gruppo-sviluppo]
+  children: [sviluppo]
   members: [furini, professore]
   
 ---
