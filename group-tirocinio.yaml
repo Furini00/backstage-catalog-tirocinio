@@ -6,7 +6,7 @@ metadata:
 spec:
   type: team
   profile:
-    displayName: tirocinio
+    displayName: Tirocinio
     email: tirocinio@example.com
     picture: https://example.com/groups/tirocinio.jpeg
   parents: sviluppo
