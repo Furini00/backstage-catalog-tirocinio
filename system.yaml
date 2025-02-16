@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: gestione-tirocinio
+  description: Sistema per la gestione del tirocinio
+spec:
+  owner: tirocinio
