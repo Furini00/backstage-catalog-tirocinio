@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: 'Furini00/backstage-catalog-tirocinio'
-    uptimeMonitorId: 798608258
+    uptimeMonitorId: '798608258'
   links:
     - url: https://github.com/Furini00/backstage-catalog-tirocinio
       title: Repository GitHub del Tirocinio
