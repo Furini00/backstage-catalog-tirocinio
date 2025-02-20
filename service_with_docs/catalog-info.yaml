@@ -16,4 +16,16 @@ spec:
   lifecycle: production
   owner: tirocinio
 
-  
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tirocinio-database
+  description: Database per il progetto Tirocinio Furini
+  annotations:
+    github.com/project-slug: 'Furini00/tirocinio-database'
+spec:
+  type: database
+  lifecycle: production
+  owner: tirocinio
+  subcomponentOf: Tirocinio-Furini
