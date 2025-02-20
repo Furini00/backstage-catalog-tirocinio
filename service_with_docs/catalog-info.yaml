@@ -7,6 +7,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: 'Furini00/backstage-catalog-tirocinio'
     uptimeMonitorId: '798608258'
+    sonarqube.org/project-key: localhost/YOUR_PROJECT_KEY
   links:
     - url: https://github.com/Furini00/backstage-catalog-tirocinio
       title: Repository GitHub del Tirocinio
