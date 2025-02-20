@@ -26,7 +26,7 @@ metadata:
     github.com/project-slug: 'Furini00/tirocinio-database'
   links:
   - url: https://github.com/Furini00/tirocinio-database
-    title: Repository GitHub del Tirocinio
+    title: Repository GitHub del database
     icon: github
 spec:
   type: database
