@@ -24,6 +24,7 @@ metadata:
   description: Database per il progetto Tirocinio Furini
   annotations:
     github.com/project-slug: 'Furini00/tirocinio-database'
+    uptimeMonitorId: '798619603'
   links:
   - url: https://github.com/Furini00/tirocinio-database
     title: Repository GitHub del database
