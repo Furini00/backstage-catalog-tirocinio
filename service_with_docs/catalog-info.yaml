@@ -25,7 +25,7 @@ metadata:
   annotations:
     github.com/project-slug: 'Furini00/tirocinio-database'
   links:
-  - url: https://github.com/Furini00/backstage-catalog-tirocinio
+  - url: https://github.com/Furini00/tirocinio-database
     title: Repository GitHub del Tirocinio
     icon: github
 spec:
